@@ -5,11 +5,12 @@ Repositório para pequeno projeto api
 ## Api
 
 * http://localhost:8090/login
-	###Request
-		{"username":"admin", "password":"password"}
+
+### Request
+	{"username":"admin", "password":"password"}
 
 * http://localhost:8090/apiaudora/log/save
-	###Request
+### Request
 	{
 	"produto":"produto",
 	"cliente":"cliente",
@@ -22,25 +23,25 @@ Repositório para pequeno projeto api
 	}
 
 * http://localhost:8090/apiaudora/log/findall
-	*Traz todos os resultados
+	* Traz todos os resultados
 
 * http://localhost:8090/apiaudora/log/produto/{produto}
-	*Traz resultados filtrados por produto
+	* Traz resultados filtrados por produto
 	
 * http://localhost:8090/apiaudora/log/cliente/{cliente}
-	*Traz resultados filtrados por cliente
+	* Traz resultados filtrados por cliente
 	
 * http://localhost:8090/apiaudora/log/categoria/{categoria}
-	*Traz resultados filtrados por categoria
+	* Traz resultados filtrados por categoria
 	
 * http://localhost:8090/apiaudora/log/{id}
-	*Traz resultado único pelo id
+	* Traz resultado único pelo id
 
 * http://localhost:8090/apiaudora/log/intervalodata/{datainicial}/{datafinal}
-	*Traz resultados filtrados por intervalo de tempo
+	* Traz resultados filtrados por intervalo de tempo
 
 * http://localhost:8090/apiaudora/log/find?produto={produto}&cliente={cliente}&categoria={categoria}&dataInicio={datainicial}&dataFim={datafinal}
-	*Traz resultados de acordo com parametros passados na url - nenhum valor é obrigatório
+	* Traz resultados de acordo com parametros passados na url - nenhum valor é obrigatório
 	
 	### Parâmetros
 		* produto 
@@ -49,7 +50,7 @@ Repositório para pequeno projeto api
 		* dataInicio 
 		* dataFim 
 
-##Response
+## Response
 ### Usuário sem autenticação
 {
     "timestamp": 1497437061194,
@@ -59,7 +60,7 @@ Repositório para pequeno projeto api
     "path": "/apiaudora/log/findall"
 }
 
-## Usuário não autorizado
+### Usuário não autorizado
 {
     "timestamp": 1497441772721,
     "status": 401,
