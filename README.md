@@ -203,3 +203,13 @@ Repositório para pequeno projeto api
 	    "message": "Authentication Failed: User is disabled",
 	    "path": "/login"
 	}
+
+##### Token expirado 
+	{
+	    "timestamp": 1497483472882,
+	    "status": 500,
+	    "error": "Internal Server Error",
+	    "exception": "io.jsonwebtoken.ExpiredJwtException",
+	    "message": "JWT expired at 2017-06-14T19:45:04Z. Current time: 2017-06-14T20:37:52Z, a difference of 3168606 milliseconds.  Allowed clock skew: 0 milliseconds.",
+	    "path": "/apiaudora/log/find"
+	}
