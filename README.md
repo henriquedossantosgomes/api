@@ -6,13 +6,13 @@ Repositório para pequeno projeto api
 
 * http://localhost:8090/login
 
-### Request
+##### Request
 	{"username":"admin", "password":"password"}
-### Response
+##### Response
 	* No header seencontra o token de autenticação
 
 * http://localhost:8090/apiaudora/log/save
-### Request
+##### Request
 	{
 	"produto":"produto",
 	"cliente":"cliente",
@@ -26,7 +26,7 @@ Repositório para pequeno projeto api
 
 * http://localhost:8090/apiaudora/log/findall
 	* Traz todos os resultados
-### Response
+##### Response
 	[
 		{
 		"id": 1,
@@ -54,7 +54,7 @@ Repositório para pequeno projeto api
 
 * http://localhost:8090/apiaudora/log/produto/{produto}
 	* Traz resultados filtrados por produto
-### Response
+##### Response
 	[
 		{
 		"id": 1,
@@ -71,7 +71,7 @@ Repositório para pequeno projeto api
 	
 * http://localhost:8090/apiaudora/log/cliente/{cliente}
 	* Traz resultados filtrados por cliente
-### Response
+##### Response
 	[
 		{
 		"id": 1,
@@ -88,7 +88,7 @@ Repositório para pequeno projeto api
 
 * http://localhost:8090/apiaudora/log/categoria/{categoria}
 	* Traz resultados filtrados por categoria
-### Response
+##### Response
 	[
 		{
 		"id": 1,
@@ -105,7 +105,7 @@ Repositório para pequeno projeto api
 	
 * http://localhost:8090/apiaudora/log/{id}
 	* Traz resultado único pelo id
-### Response
+##### Response
 	{
 	"id": 1,
 	"produto":"produto",
@@ -120,7 +120,7 @@ Repositório para pequeno projeto api
 	
 * http://localhost:8090/apiaudora/log/intervalodata/{datainicial}/{datafinal}
 	* Traz resultados filtrados por intervalo de tempo
-### Response
+##### Response
 	[
 		{
 		"id": 1,
@@ -143,7 +143,7 @@ Repositório para pequeno projeto api
 		* categoria 
 		* dataInicio 
 		* dataFim 
-### Response
+##### Response
 	[
 		{
 		"id": 1,
@@ -159,9 +159,25 @@ Repositório para pequeno projeto api
 	]
 
 
-## Response
-* Retornos de erro por autenticação
-### Usuário sem autenticação
+## Response Gerais
+
+#### Retorno OK
+	{
+	"status": 200,
+	"mensagem": "Operacao realizada com sucesso"
+	}
+
+
+#### Retorno Exceção
+	{
+		"status": 400,
+		"mensagem": "Falha na operação"
+	}
+
+
+#### Retornos de erro por autenticação
+
+##### Usuário sem autenticação
 	{
 	    "timestamp": 1497437061194,
 	    "status": 403,
@@ -170,7 +186,7 @@ Repositório para pequeno projeto api
 	    "path": "/apiaudora/log/findall"
 	}
 
-### Usuário não autorizado
+##### Usuário não autorizado
 	{
 	    "timestamp": 1497441772721,
 	    "status": 401,
@@ -179,7 +195,7 @@ Repositório para pequeno projeto api
 	    "path": "/login"
 	}
 
-### Usuario não ativo
+##### Usuario não ativo
 	{
 	    "timestamp": 1497441975034,
 	    "status": 401,
