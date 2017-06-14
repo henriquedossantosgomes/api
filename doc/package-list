@@ -1,0 +1,8 @@
+br.api.audora.apiaudora
+br.api.audora.config
+br.api.audora.controller
+br.api.audora.domain
+br.api.audora.repository
+br.api.audora.security
+br.api.audora.service
+br.api.audora.util
