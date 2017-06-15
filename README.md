@@ -1,15 +1,27 @@
 # API Log
-Repositório para pequeno projeto api
+Repositório para pequeno projeto de uma api
+Projeto Utiliza banco de dados PostgreSQL e conecta a database audoraapi_db
+* Tecnologias Utilizadas:
+	* Spring Boot
+	* Spring Security
+	* Hibernate
+	* JWT (Json Web Token)
+	* PostgreSQL
+	
 
 
 ## Api
+* Porta configurada 8090 (pode ser alterada editando o arquivo application.properties)
 
 * http://localhost:8090/login
 
 ##### Request
 	{"username":"admin", "password":"password"}
 ##### Response
-	* No header seencontra o token de autenticação
+	* No header se encontra o token de autenticação que deve ser enviado nas demais requisições ao sistema
+	
+	Exemplo:
+	Authorization →Token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTQ5ODI5NzIwNX0.tjwWfxjKNB6Zo-VGKohgDB1OFcDHn_KE873UBfW52YqFCpSFRnUyZJFILQbpfAhF0VzG-zW4d6N3Mfp_woxgrg
 
 * http://localhost:8090/apiaudora/log/save
 ##### Request
