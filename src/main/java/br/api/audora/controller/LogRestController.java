@@ -232,7 +232,7 @@ public class LogRestController {
 	 * CONSULTA LOGS POR INTERVALO DE TEMPO CONFORME EXEMPLO
 	 * 
 	 * EXEMPLO:
-	 * 	 URL:http://localhost:8090/apiaudora/log/intervalodata/dataInicio/dataFim
+	 * 	 URL:http://localhost:8090/apiaudora/log/intervalodata/2017-06-12/2017-06-13
 	 * 
 	 *   RESPONSE JSON:
 	 *				[
@@ -264,7 +264,7 @@ public class LogRestController {
 	 * EXEMPLO:
 	 * 	 URL:http://localhost:8090/apiaudora/log/find?cliente=Alagoas&produto=OAB
 	 * 	
-	 * Parâmetros:
+	 * Parametros aceitos:
 	 * 		cliente - pode receber os valores "Alagoas", "Sergipe", etc.
 	 * 		produto - pode receber os valores "Defensoria" ou "OAB" 
 	 * 		categoria - pode assumir valores como "erro", "permissao", "autenticaçao", etc.

@@ -37,7 +37,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		//Conta default
 		auth.inMemoryAuthentication()
 			.withUser("admin")
-			.password("admin")
+			.password("password")
 			.roles("ADMIN");
 		
 		auth.jdbcAuthentication()

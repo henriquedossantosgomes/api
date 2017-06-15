@@ -97,7 +97,6 @@ public class LogService {
             return new ResponseEntity<>(ResponseMessage.getMensagemOk(), HttpStatus.CREATED);
         } catch (Exception e) {
             e.printStackTrace();
-            //TODO chave duplicada pode usar status 409(conflict)
             return new ResponseEntity<>(ResponseMessage.getMensagemErro(e.getMessage()), HttpStatus.BAD_REQUEST);
         }
 	}
